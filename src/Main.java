@@ -29,10 +29,32 @@ public class Main {
         }
 
     }
+    public static void delDistance(int deliveryDistance){
+        System.out.println("Task 4");
+        byte days = 0;
+        if (deliveryDistance <= 20){
+            days = 1;
+            System.out.println("Потребуется дней:" +days);
+        }
+        else if (deliveryDistance > 20 && deliveryDistance <=60){
+            days = 2;
+            System.out.println("Потребуется дней:" +days);
+        }
+        else if (deliveryDistance > 60 && deliveryDistance <=100){
+            days = 3;
+            System.out.println("Потребуется дней: "+days);
+        }
+        else {
+            System.out.println("Доставить не получится");
+        }
+    }
     public static void main(String[] args) {
         System.out.println("Task1");
         leapYear(2021);
+        System.out.println("Task2");
         osVersion(1,2019);
+        System.out.println("Task3");
+        delDistance(30);
 
     }
 
